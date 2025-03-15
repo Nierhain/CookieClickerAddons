@@ -13,9 +13,8 @@ if (
 } else {
     const node = document.createElement('div');
     const wrapper = document.getElementById('topBar');
+    node.innerHTML ='<input type="checkbox" name="autoclick" onclick="autoclick()" id="autoclickSwitch"><label for="autoclick">Autoclick Cookie</label>';
     wrapper.appendChild(node);
-    node.innerHTML =
-        '<input type="checkbox" name="autoclick" onclick="autoclick()" id="autoclickSwitch"><label for="autoclick">Autoclick Cookie</label>';
 }
 let interval = null;
 
